@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xel-tech - Solutions Numériques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil">
+                    <img src="Glogo.png" alt="Xel-tech Logo" class="logo-img">
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <label for="menu-toggle" class="menu-overlay"></label>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <img src="Glogo.png" alt="Xel-tech" class="hero-logo">
+                <h1 class="hero-title">Solutions Numériques<br>pour Votre Entreprise</h1>
+                <p class="hero-subtitle">Nous transformons vos idées en solutions digitales innovantes</p>
+                <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+            </div>
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="phone-content">
+                            <div class="phone-header">
+                                <div class="phone-logo-small">XEL-TECH</div>
+                            </div>
+                            <div class="phone-body">
+                                <div class="phone-card phone-title">
+                                    <p>Solutions<br>Numériques</p>
+                                </div>
+                                <div class="phone-card phone-service">
+                                    <div class="phone-card-icon">💻</div>
+                                    <div class="phone-card-text">
+                                        <p class="phone-card-title">Web Design</p>
+                                        <p class="phone-card-desc">Sites modernes</p>
+                                    </div>
+                                </div>
+                                <div class="phone-card phone-service">
+                                    <div class="phone-card-icon">📱</div>
+                                    <div class="phone-card-text">
+                                        <p class="phone-card-title">App Mobile</p>
+                                        <p class="phone-card-desc">Développement</p>
+                                    </div>
+                                </div>
+                                <div class="phone-card phone-service">
+                                    <div class="phone-card-icon">🎨</div>
+                                    <div class="phone-card-text">
+                                        <p class="phone-card-title">Design</p>
+                                        <p class="phone-card-desc">UI/UX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de Xel-tech</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="apropos.jpeg" alt="À propos de Xel-tech" class="about-img">
+                </div>
+                <div class="about-text">
+                    <p class="lead">Xel-tech est une agence de solutions numériques composée de 5 développeurs passionnés, dédiés à accompagner les entreprises dans leur transformation digitale.</p>
+                    <p>Notre mission est de fournir des services numériques de qualité supérieure, allant de la création de sites web et d'applications mobiles à la gestion de données et au recrutement de talents digitaux.</p>
+                    <p>Nous croyons en l'innovation, la créativité et l'excellence technique pour offrir à nos clients des solutions sur mesure qui répondent à leurs besoins spécifiques.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5</h3>
+                            <p>Développeurs Experts</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Satisfaction Client</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support Disponible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Équipe -->
+    <section id="equipe" class="team">
+        <div class="container">
+            <h2 class="section-title">Notre Équipe</h2>
+            <p class="section-subtitle">Rencontrez les 5 talents qui font de Xel-tech votre partenaire de confiance</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="abda.jpeg" alt="Abdoulaye SY" class="member-photo-img">
+                    </div>
+                    <h3 class="member-name">Abdoulaye SY</h3>
+                    <p class="member-role">Développeur Full-Stack</p>
+                    <p class="member-bio">Spécialisé dans le développement web et mobile, expert en technologies modernes.</p>
+                    <div class="member-skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Mobile</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="diallo.jpeg" alt="Abdoulaye Diallo" class="member-photo-img">
+                    </div>
+                    <h3 class="member-name">Abdoulaye DIALLO</h3>
+                    <p class="member-role">Designer & UI/UX</p>
+                    <p class="member-bio">Créatif et passionné par le design graphique et l'expérience utilisateur.</p>
+                    <div class="member-skills">
+                        <span class="skill-tag">Design</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Branding</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="salma.jpeg" alt="Salimatou BARRY" class="member-photo-img">
+                    </div>
+                    <h3 class="member-name">Salimatou BARRY</h3>
+                    <p class="member-role">Data Analyst & Community Manager</p>
+                    <p class="member-bio">Expert en analyse de données et gestion de communautés digitales.</p>
+                    <div class="member-skills">
+                        <span class="skill-tag">Data</span>
+                        <span class="skill-tag">Analytics</span>
+                        <span class="skill-tag">Social Media</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="xadim.jpeg" alt="Khadim GNIOME" class="member-photo-img">
+                    </div>
+                    <h3 class="member-name">Khadim GNIOME</h3>
+                    <p class="member-role">Expert Réseaux & Infrastructure</p>
+                    <p class="member-bio">Spécialiste en maintenance et optimisation d'infrastructures réseau.</p>
+                    <div class="member-skills">
+                        <span class="skill-tag">Réseaux</span>
+                        <span class="skill-tag">Infrastructure</span>
+                        <span class="skill-tag">Sécurité</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="bamba.jpeg" alt="Mouhamad Bamba FALL" class="member-photo-img">
+                    </div>
+                    <h3 class="member-name">Mouhamad Bamba FALL</h3>
+                    <p class="member-role">Tech Lead & Recrutement Digital</p>
+                    <p class="member-bio">Leader technique et expert en recrutement de talents digitaux.</p>
+                    <div class="member-skills">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Recrutement</span>
+                        <span class="skill-tag">Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <p class="section-subtitle">Des solutions complètes pour votre transformation digitale</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Développement Web & Mobile</h3>
+                    <p>Création de sites web modernes et d'applications mobiles iOS et Android sur mesure, adaptés à vos besoins.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Design Graphique</h3>
+                    <p>Conception d'identités visuelles, logos, chartes graphiques et supports de communication professionnels.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Community Management</h3>
+                    <p>Gestion de vos réseaux sociaux, création de contenu engageant et stratégie de communication digitale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Maintenance Réseaux</h3>
+                    <p>Installation, configuration et maintenance de vos infrastructures réseau pour une performance optimale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analytics</h3>
+                    <p>Collecte, nettoyage et analyse de vos données pour vous aider à prendre des décisions éclairées.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Recrutement Digital</h3>
+                    <p>Aide au recrutement de jeunes talents du digital pour renforcer vos équipes et vos solutions numériques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations -->
+    <section id="realisations" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Nos Réalisations</h2>
+            <p class="section-subtitle">Découvrez quelques-uns de nos projets réussis</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="ecommerce.jpeg" alt="Site E-commerce" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Site E-commerce</h4>
+                            <p>Plateforme de vente en ligne moderne et performante</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="app-mobile.webp" alt="Application Mobile" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Application Mobile</h4>
+                            <p>App iOS et Android pour gestion de tâches</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="dashboard1.avif" alt="Dashboard Analytics" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard Analytics</h4>
+                            <p>Tableau de bord pour visualisation de données</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="branding.png" alt="Refonte Graphique" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Refonte Graphique</h4>
+                            <p>Nouvelle identité visuelle pour entreprise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="network.jpg" alt="Réseau Entreprise" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Réseau Entreprise</h4>
+                            <p>Infrastructure réseau sécurisée et optimisée</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="social-media.png" alt="Stratégie Social Media" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h4>Stratégie Social Media</h4>
+                            <p>Campagne de communication digitale réussie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <p class="section-subtitle">Discutons de votre projet et trouvons ensemble la meilleure solution</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@xel-tech.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+221 78 600 00 28</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Dakar, Senegal</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="Glogo.png" alt="Xel-tech" class="footer-logo">
+                    <p>Votre partenaire de confiance pour toutes vos solutions numériques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#realisations">Réalisations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Développement Web</a></li>
+                        <li><a href="#services">Design Graphique</a></li>
+                        <li><a href="#services">Data Analytics</a></li>
+                        <li><a href="#services">Recrutement Digital</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Xel-tech. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
