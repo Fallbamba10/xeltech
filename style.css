@@ -595,6 +595,13 @@ section {
     margin-top: 2rem;
 }
 
+@media (max-width: 768px) {
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
 .stat-item {
     text-align: center;
     padding: 2rem;
@@ -630,13 +637,18 @@ section {
 }
 
 .stat-item h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 800;
     margin-bottom: 0.5rem;
+    line-height: 1;
+    word-break: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    width: 100%;
 }
 
 .stat-item p {
