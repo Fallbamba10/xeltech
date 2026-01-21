@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Bannière Promo Roulante -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <span class="promo-icon">🎉</span>
+            <span class="promo-text">🚀 OFFRE SPÉCIALE DU MOIS! Réduction de 20% sur tous nos services •  🚀 OFFRE SPÉCIALE DU MOIS! Réduction de 20% sur tous nos services •  </span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -18,6 +26,7 @@
                     <img src="Glogo.png" alt="Xel-tech Logo" class="logo-img">
                 </a>
             </div>
+
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">
                 <span></span>
@@ -31,6 +40,11 @@
                 <li><a href="#realisations" class="nav-link">Réalisations</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+
+            <!-- Toggle Mode Jour/Nuit -->
+            <input type="checkbox" id="theme-toggle" class="theme-toggle">
+            <label for="theme-toggle" class="theme-toggle-label" title="Basculer mode jour/nuit"></label>
+
             <label for="menu-toggle" class="menu-overlay"></label>
         </div>
     </nav>
@@ -128,68 +142,98 @@
             <p class="section-subtitle">Rencontrez les 5 talents qui font de Xel-tech votre partenaire de confiance</p>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-photo">
-                        <img src="abda.jpeg" alt="Abdoulaye SY" class="member-photo-img">
-                    </div>
-                    <h3 class="member-name">Abdoulaye SY</h3>
-                    <p class="member-role">Développeur Full-Stack</p>
-                    <p class="member-bio">Spécialisé dans le développement web et mobile, expert en technologies modernes.</p>
-                    <div class="member-skills">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Mobile</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="diallo.jpeg" alt="Abdoulaye Diallo" class="member-photo-img">
-                    </div>
-                    <h3 class="member-name">Abdoulaye DIALLO</h3>
-                    <p class="member-role">Designer & UI/UX</p>
-                    <p class="member-bio">Créatif et passionné par le design graphique et l'expérience utilisateur.</p>
-                    <div class="member-skills">
-                        <span class="skill-tag">Design</span>
-                        <span class="skill-tag">UI/UX</span>
-                        <span class="skill-tag">Branding</span>
+                    <div class="team-member-card">
+                        <div class="card-front">
+                            <div class="member-photo">
+                                <img src="abda.jpeg" alt="Abdoulaye SY" class="member-photo-img">
+                            </div>
+                            <h3 class="member-name">Abdoulaye SY</h3>
+                            <p class="member-role">Développeur Full-Stack</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="member-bio">Spécialisé dans le développement web et mobile, expert en technologies modernes.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Mobile</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <div class="member-photo">
-                        <img src="salma.jpeg" alt="Salimatou BARRY" class="member-photo-img">
-                    </div>
-                    <h3 class="member-name">Salimatou BARRY</h3>
-                    <p class="member-role">Data Analyst & Community Manager</p>
-                    <p class="member-bio">Expert en analyse de données et gestion de communautés digitales.</p>
-                    <div class="member-skills">
-                        <span class="skill-tag">Data</span>
-                        <span class="skill-tag">Analytics</span>
-                        <span class="skill-tag">Social Media</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="xadim.jpeg" alt="Khadim GNIOME" class="member-photo-img">
-                    </div>
-                    <h3 class="member-name">Khadim GNIOME</h3>
-                    <p class="member-role">Expert Réseaux & Infrastructure</p>
-                    <p class="member-bio">Spécialiste en maintenance et optimisation d'infrastructures réseau.</p>
-                    <div class="member-skills">
-                        <span class="skill-tag">Réseaux</span>
-                        <span class="skill-tag">Infrastructure</span>
-                        <span class="skill-tag">Sécurité</span>
+                    <div class="team-member-card">
+                        <div class="card-front">
+                            <div class="member-photo">
+                                <img src="diallo.jpeg" alt="Abdoulaye Diallo" class="member-photo-img">
+                            </div>
+                            <h3 class="member-name">Abdoulaye DIALLO</h3>
+                            <p class="member-role">Designer & UI/UX</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="member-bio">Créatif et passionné par le design graphique et l'expérience utilisateur.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Design</span>
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Branding</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <div class="member-photo">
-                        <img src="bamba.jpeg" alt="Mouhamad Bamba FALL" class="member-photo-img">
+                    <div class="team-member-card">
+                        <div class="card-front">
+                            <div class="member-photo">
+                                <img src="salma.jpeg" alt="Salimatou BARRY" class="member-photo-img">
+                            </div>
+                            <h3 class="member-name">Salimatou BARRY</h3>
+                            <p class="member-role">Data Analyst & Community Manager</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="member-bio">Expert en analyse de données et gestion de communautés digitales.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Data</span>
+                                <span class="skill-tag">Analytics</span>
+                                <span class="skill-tag">Social Media</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="member-name">Mouhamed Bamba FALL</h3>
-                    <p class="member-role">Tech Lead & Recrutement Digital</p>
-                    <p class="member-bio">Leader technique et expert en recrutement de talents digitaux.</p>
-                    <div class="member-skills">
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Recrutement</span>
-                        <span class="skill-tag">Architecture</span>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-card">
+                        <div class="card-front">
+                            <div class="member-photo">
+                                <img src="xadim.jpeg" alt="Khadim GNIOME" class="member-photo-img">
+                            </div>
+                            <h3 class="member-name">Khadim GNIOME</h3>
+                            <p class="member-role">Expert Réseaux & Infrastructure</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="member-bio">Spécialiste en maintenance et optimisation d'infrastructures réseau.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Réseaux</span>
+                                <span class="skill-tag">Infrastructure</span>
+                                <span class="skill-tag">Sécurité</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-card">
+                        <div class="card-front">
+                            <div class="member-photo">
+                                <img src="bamba.jpeg" alt="Mouhamad Bamba FALL" class="member-photo-img">
+                            </div>
+                            <h3 class="member-name">Mouhamed Bamba FALL</h3>
+                            <p class="member-role">Tech Lead & Recrutement Digital</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="member-bio">Leader technique et expert en recrutement de talents digitaux.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Recrutement</span>
+                                <span class="skill-tag">Architecture</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,6 +344,77 @@
         </div>
     </section>
 
+    <!-- Section Témoignages -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Nos Clients Parlent de Nous</h2>
+            <p class="section-subtitle">Découvrez les avis de nos clients satisfaits</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="company-logo">
+                        <img src="sunucode.png" alt="Logo Sunucode">
+                    </div>
+                    <div class="testimonial-header">
+                        <div class="quote-icon">"</div>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Xel-tech a complètement transformé notre présence digitale. Une équipe compétente, réactive et à l'écoute de nos besoins.</p>
+                    <div class="testimonial-author">
+                        <h4>Coach Fall</h4>
+                        <p>DG Sunucode</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="company-logo">
+                        <img src="tiktak.jpeg" alt="Logo TikTak">
+                    </div>
+                    <div class="testimonial-header">
+                        <div class="quote-icon">"</div>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Partenaire fiable et innovant pour tous nos projets digitaux. Résultats au-delà de nos attentes!</p>
+                    <div class="testimonial-author">
+                        <h4>Coach Niang</h4>
+                        <p>CEO TikTak</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="company-logo">
+                        <img src="astu.jpeg" alt="Logo Comptable">
+                    </div>
+                    <div class="testimonial-header">
+                        <div class="quote-icon">"</div>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Service impeccable, délais respectés et transparence totale. Je recommande vivement Xel-tech!</p>
+                    <div class="testimonial-author">
+                        <h4>Astu</h4>
+                        <p>Comptable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section Contact -->
     <section id="contact" class="contact">
         <div class="container">
@@ -381,5 +496,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/221786000028" target="_blank" class="whatsapp-button" title="Contactez-nous sur WhatsApp">
+        <img src="wht.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
 </body>
 </html>
